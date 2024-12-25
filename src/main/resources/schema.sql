@@ -1,0 +1,17 @@
+SHOW DATABASES;
+CREATE SCHEMA IF NOT EXISTS celikoor;
+SHOW DATABASES;
+use celikoor;
+SHOW TABLES;
+CREATE TABLE IF NOT EXISTS actors
+(
+    ID INTEGER NOT NULL AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL,
+    Birth_date DATE,
+    Nationality VARCHAR(255) NOT NULL,
+    Gender BOOLEAN NOT NULL ,
+    PRIMARY KEY (ID)
+);
+DESCRIBE actors;
+select * from actors;
+
